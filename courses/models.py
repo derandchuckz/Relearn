@@ -21,8 +21,8 @@ class Subject(models.Model):
 
 
 class Course(models.Model):
-    owner = models.ForeignKey(User, related_name='Courses_created', on_delete=models.CASCADE)
-    subject = models.ForeignKey(Subject, related_name='Courses', on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, related_name='courses_created', on_delete=models.CASCADE)
+    subject = models.ForeignKey(Subject, related_name='courses', on_delete=models.CASCADE)
 
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)

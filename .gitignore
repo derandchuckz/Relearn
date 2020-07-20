@@ -225,3 +225,7 @@ gen
 venv
 .idea
 images
+
+db.sqlite3
+**/__pycache__/
+*.pyc
